@@ -1,0 +1,18 @@
+/*
+ 
+ * 图片旋转
+ * 
+ * 
+ * */
+*{
+	padding:0; margin:0; list-style:none;
+	}
+.roundabout-holder { 
+	margin: 0 auto 50px; width: 850px; height: 412px;
+	 }
+.roundabout-moveable-item { 
+	width: 634px; height: 412px; cursor: pointer; 
+	}
+.roundabout-moveable-item img { 
+	width: 100%; 
+	}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>挑战者飞机官方网站</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/Image-rotation.css"/>
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/slider.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	</head>
+	<body >
+		
+		<!--banner begin-->
+		<div id="banner_tabs" class="flexslider">
+			<ul class="slides">
+				<li>
+					<a title="" target="_blank" href="#">
+						<img width="1920" height="700" alt="" style="background: url(images/banner-1.jpg) no-repeat center;" src="images/alpha.png">
+					</a>
+				</li>
+				<li>
+					<a title="" href="#">
+						<img width="1920" height="700" alt="" style="background: url(images/banner-2.jpg) no-repeat center;" src="images/alpha.png">
+					</a>
+				</li>
+				<li>
+					<a title="" href="#">
+						<img width="1920" height="700" alt="" style="background: url(images/banner-3.jpg) no-repeat center;" src="images/alpha.png">
+					</a>
+				</li>
+			</ul>
+			<ul class="flex-direction-nav">
+				<li><a class="flex-prev" href="javascript:;">Previous</a></li>
+				<li><a class="flex-next" href="javascript:;">Next</a></li>
+			</ul>
+			<ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+				<li><a>1</a></li>
+				<li><a>2</a></li>
+				<li><a>2</a></li>
+			</ol>
+			<div class="header">
+				<div class=" nav">
+					<p class="logo">
+						<a href=""><img src="images/logo.png"></a>
+					</p>
+					<ul class="nav-list">
+						<li><a href="Index.html">首　　页</a></li>
+						<li><a href="about.html">关于我们</a></li>
+						<li><a href="product-details.html">产品与服务</a></li>
+						<li><a href="Index.html#video-here">视频信息</a></li>
+						<li><a href="Index.html#bottom">联系我们</a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<!--<script src="js/jquery-1.10.2.min.js"></script>-->
+		<script src="js/slider.js"></script>
+		<script type="text/javascript">
+		$(function() {
+			var bannerSlider = new Slider($('#banner_tabs'), {
+				time: 5000,
+				delay: 400,
+				event: 'hover',
+				auto: true,
+				mode: 'fade',
+				controller: $('#bannerCtrl'),
+				activeControllerCls: 'active'
+			});
+			$('#banner_tabs .flex-prev').click(function() {
+				bannerSlider.prev()
+			});
+			$('#banner_tabs .flex-next').click(function() {
+				bannerSlider.next()
+			});
+		})
+		</script>
+		<!--banner end-->
+		
+		
+		<div class="location">
+			<p class="location-left">[<span>产品与服务</span>]</p>
+			<ul class="location-right">
+				<li>当前位置：</li>
+				<li>首页></li>
+				<li>产品与服务</li>
+			</ul>
+		</div>
+		<div class="product-details">
+			<p class="p-details-bt">陆上飞超轻型飞机</p>
+			<img class="p-details-bt-line" src="images/page-bt--rline.png">
+			<p class="p-details-bt-text">超轻型飞机有许多特点，它的主要特点体现在"超轻"二字上，那就是
+				结构简单、起降方便、低空低速性能好、驾驶容易、运输使用和维护
+				方便、 经济安全等，是一种易普及推广的大众航空器。
+			</p>
+			<div class="product-details-1">
+				<img src="images/page-product-pic1.jpg">
+			</div>	
+			<ul class="product-details-2">
+				<li class="product-details-font">
+					<p class="p-details-bt">结构简单</p>
+					<img class="p-details-bt-line" src="images/page-bt-lline.png">
+					<p class="p-details-bt-text">超轻型飞机有许多特点，它的主要特点体现在"超轻"二字上，那就是
+						结构简单、起降方便、低空低速性能好、驾驶容易、运输使用和维护
+						方便、 经济安全等，是一种易普及推广的大众航空器。
+					</p>
+					
+				</li>
+				<li class="product-details-img">
+					<img src="images/page-product-pic2.jpg">
+				</li>
+			</ul>	
+			<ul class="product-details-3">
+				<li class="product-details-img">
+					<img src="images/page-product-pic3.jpg">
+				</li>
+				<li class="product-details-font">
+					<p class="p-details-bt">驾驶容易</p>
+					<img class="p-details-bt-line" src="images/page-bt--rline.png">
+					<p class="p-details-bt-text">超轻型飞机发展到今天，大多具有良好的稳定性和操纵性，
+						操纵件数量不多、仪表少，都是最基本的，对初学飞行者来说，容易熟悉
+						和掌握。一般人通过一、两个月的学习就能顺利地飞行。
+					</p>
+					
+				</li>
+			</ul>	
+			<ul class="product-details-2">
+				<li class="product-details-font">
+					<p class="p-details-bt">低空低速性能好</p>
+					<img class="p-details-bt-line" src="images/page-bt-lline.png">
+					<p class="p-details-bt-text">超轻型飞机的飞行速度，一般为50-100
+						千米/小时左右。这种速度范围，适于喷药灭虫、巡视交通、放牧等
+						工作要求。与大飞机相比，超轻型飞机的爬升角一般都比较大，
+						越障能力比较强，更适于超低空飞行和作业。
+					</p>
+					
+				</li>
+				<li class="product-details-img">
+					<img src="images/page-product-pic4.jpg">
+				</li>
+			</ul>	
+					
+			
+		</div>
+				
+		
+		<!--footer begin-->
+		<div class="footer">
+			<div>
+				<p>版权所有： 西安挑战者飞机制造有限公司　　　　技术支持 ：百变科技（网站建设 网络推广）</p>
+				<a id="bottom" href="javascript:scroll(0,0)">
+					<img src="images/go-top.jpg">
+				</a>
+			</div>	
+		</div>
+		<!--footer-->
+		
+		<script type="text/javascript" src="js/roundabout.js"></script> 
+		<script type="text/javascript" src="js/roundabout_shapes.js"></script> 
+		<script type="text/javascript" src="js/gallery_init.js"></script> 
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>挑战者飞机官方网站</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/Image-rotation.css"/>
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/slider.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	</head>
+	<body >
+		
+		<!--banner begin-->
+		<div id="banner_tabs" class="flexslider">
+			<ul class="slides">
+				<li>
+					<a title="" target="_blank" href="#">
+						<img width="1920" height="700" alt="" style="background: url(images/banner-1.jpg) no-repeat center;" src="images/alpha.png">
+					</a>
+				</li>
+				<li>
+					<a title="" href="#">
+						<img width="1920" height="700" alt="" style="background: url(images/banner-2.jpg) no-repeat center;" src="images/alpha.png">
+					</a>
+				</li>
+				<li>
+					<a title="" href="#">
+						<img width="1920" height="700" alt="" style="background: url(images/banner-3.jpg) no-repeat center;" src="images/alpha.png">
+					</a>
+				</li>
+			</ul>
+			<ul class="flex-direction-nav">
+				<li><a class="flex-prev" href="javascript:;">Previous</a></li>
+				<li><a class="flex-next" href="javascript:;">Next</a></li>
+			</ul>
+			<ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+				<li><a>1</a></li>
+				<li><a>2</a></li>
+				<li><a>2</a></li>
+			</ol>
+			<div class="header">
+				<div class=" nav">
+					<p class="logo">
+						<a href=""><img src="images/logo.png"></a>
+					</p>
+					<ul class="nav-list">
+						<li><a href="Index.html">首　　页</a></li>
+						<li><a href="about.html">关于我们</a></li>
+						<li><a href="product-details.html">产品与服务</a></li>
+						<li><a href="Index.html#video-here">视频信息</a></li>
+						<li><a href="Index.html#bottom">联系我们</a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<!--<script src="js/jquery-1.10.2.min.js"></script>-->
+		<script src="js/slider.js"></script>
+		<script type="text/javascript">
+		$(function() {
+			var bannerSlider = new Slider($('#banner_tabs'), {
+				time: 5000,
+				delay: 400,
+				event: 'hover',
+				auto: true,
+				mode: 'fade',
+				controller: $('#bannerCtrl'),
+				activeControllerCls: 'active'
+			});
+			$('#banner_tabs .flex-prev').click(function() {
+				bannerSlider.prev()
+			});
+			$('#banner_tabs .flex-next').click(function() {
+				bannerSlider.next()
+			});
+		})
+		</script>
+		<!--banner end-->
+		<div class="location">
+			<p class="location-left">[<span>产品与服务</span>]</p>
+			<ul class="location-right">
+				<li>当前位置：</li>
+				<li>首页></li>
+				<li>产品与服务</li>
+			</ul>
+		</div>
+		<div class="products-page">
+			<ul class="product-title">
+				<li><a href="">全部</a></li>
+				<li><a href="">陆上飞</a></li>
+				<li><a href="">水上漂</a></li>
+				<li style="border: none;"><a href="">雪中滑</a></li>
+			</ul>
+			<ul class="product-list">
+				<li>
+					<img src="images/products-pic-1.jpg">
+					<p class="product-list-name">陆上飞</p>
+					<p class="product-list-text">DJI的核心技术融合一体，易于操作、一体化的飞行平台设计，带给您难忘的飞行体验</p>
+				</li>
+				<li>
+					<img src="images/products-pic-2.jpg">
+					<p class="product-list-name">陆上飞</p>
+					<p class="product-list-text">DJI的核心技术融合一体，易于操作、一体化的飞行平台设计，带给您难忘的飞行体验</p>
+				</li>
+				<li>
+					<img src="images/products-pic-3.jpg">
+					<p class="product-list-name">陆上飞</p>
+					<p class="product-list-text">DJI的核心技术融合一体，易于操作、一体化的飞行平台设计，带给您难忘的飞行体验</p>
+				</li>
+				<li>
+					<img src="images/products-pic-4.jpg">
+					<p class="product-list-name">陆上飞</p>
+					<p class="product-list-text">DJI的核心技术融合一体，易于操作、一体化的飞行平台设计，带给您难忘的飞行体验</p>
+				</li>
+				<li>
+					<img src="images/products-pic-5.jpg">
+					<p class="product-list-name">陆上飞</p>
+					<p class="product-list-text">DJI的核心技术融合一体，易于操作、一体化的飞行平台设计，带给您难忘的飞行体验</p>
+				</li>
+				<li>
+					<img src="images/products-pic-6.jpg">
+					<p class="product-list-name">陆上飞</p>
+					<p class="product-list-text">DJI的核心技术融合一体，易于操作、一体化的飞行平台设计，带给您难忘的飞行体验</p>
+				</li>
+				<li>
+					<img src="images/products-pic-7.jpg">
+					<p class="product-list-name">陆上飞</p>
+					<p class="product-list-text">DJI的核心技术融合一体，易于操作、一体化的飞行平台设计，带给您难忘的飞行体验</p>
+				</li>
+				<li>
+					<img src="images/products-pic-8.jpg">
+					<p class="product-list-name">陆上飞</p>
+					<p class="product-list-text">DJI的核心技术融合一体，易于操作、一体化的飞行平台设计，带给您难忘的飞行体验</p>
+				</li>
+				<li>
+					<img src="images/products-pic-9.jpg">
+					<p class="product-list-name">陆上飞</p>
+					<p class="product-list-text">DJI的核心技术融合一体，易于操作、一体化的飞行平台设计，带给您难忘的飞行体验</p>
+				</li>
+			</ul>
+			<div class="pages">
+				<div>
+					<a href="">首页</a>
+					<a href="">上一页</a>
+					<a href="">1</a>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">下一页</a>
+					<a href="">尾页</a>
+				</div>	
+			</div>
+		</div>
+		<!--contact end-->		
+		
+		<!--footer begin-->
+		<div class="footer">
+			<div>
+				<p>版权所有： 西安挑战者飞机制造有限公司　　　　技术支持 ：百变科技（网站建设 网络推广）</p>
+				<a id="bottom" href="javascript:scroll(0,0)">
+					<img src="images/go-top.jpg">
+				</a>
+			</div>	
+		</div>
+		<!--footer-->
+		
+		<script type="text/javascript" src="js/roundabout.js"></script> 
+		<script type="text/javascript" src="js/roundabout_shapes.js"></script> 
+		<script type="text/javascript" src="js/gallery_init.js"></script> 
+</html>

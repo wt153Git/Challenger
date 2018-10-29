@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>挑战者飞机官方网站</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/Image-rotation.css"/>
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/slider.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	</head>
+	<body >
+		
+		<!--banner begin-->
+		<div id="banner_tabs" class="flexslider">
+			<ul class="slides">
+				<li>
+					<a title="" target="_blank" href="#">
+						<img width="1920" height="700" alt="" style="background: url(images/banner-1.jpg) no-repeat center;" src="images/alpha.png">
+					</a>
+				</li>
+				<li>
+					<a title="" href="#">
+						<img width="1920" height="700" alt="" style="background: url(images/banner-2.jpg) no-repeat center;" src="images/alpha.png">
+					</a>
+				</li>
+				<li>
+					<a title="" href="#">
+						<img width="1920" height="700" alt="" style="background: url(images/banner-3.jpg) no-repeat center;" src="images/alpha.png">
+					</a>
+				</li>
+			</ul>
+			<ul class="flex-direction-nav">
+				<li><a class="flex-prev" href="javascript:;">Previous</a></li>
+				<li><a class="flex-next" href="javascript:;">Next</a></li>
+			</ul>
+			<ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+				<li><a>1</a></li>
+				<li><a>2</a></li>
+				<li><a>2</a></li>
+			</ol>
+			<div class="header">
+				<div class=" nav">
+					<p class="logo">
+						<a href=""><img src="images/logo.png"></a>
+					</p>
+					<ul class="nav-list">
+						<li><a href="Index.html">首　　页</a></li>
+						<li><a href="about.html">关于我们</a></li>
+						<li><a href="product-details.html">产品与服务</a></li>
+						<li><a href="Index.html#video-here">视频信息</a></li>
+						<li><a href="Index.html#bottom">联系我们</a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<!--<script src="js/jquery-1.10.2.min.js"></script>-->
+		<script src="js/slider.js"></script>
+		<script type="text/javascript">
+		$(function() {
+			var bannerSlider = new Slider($('#banner_tabs'), {
+				time: 5000,
+				delay: 400,
+				event: 'hover',
+				auto: true,
+				mode: 'fade',
+				controller: $('#bannerCtrl'),
+				activeControllerCls: 'active'
+			});
+			$('#banner_tabs .flex-prev').click(function() {
+				bannerSlider.prev()
+			});
+			$('#banner_tabs .flex-next').click(function() {
+				bannerSlider.next()
+			});
+		})
+		</script>
+		<!--banner end-->
+		<div class="location">
+			<p class="location-left">[<span>关于我们</span>]</p>
+			<ul class="location-right">
+				<li>当前位置：</li>
+				<li><a href="#">首页></a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+		</div>
+		<div class="page-about">
+			<p class="litter-bt">挑战者简介</p>
+			<p class="page-about-text">
+				      西安挑战者飞机制造有限公司本着“客户第一，
+				      诚信至上”的原则，与多家企业建立了长期的
+				      合作关系。公司拥有一支较强的技术研发队伍
+				      并和国内大专院校强强联手，研发出拥有自主
+				      知识产权。热诚欢迎各界朋友前来参观、考察
+				      、洽谈业务。黄杰标代表西安挑战者飞机制造
+				      有限公司欢迎新老客户来电咨询。西安挑战者
+				      飞机制造有限公司本着“客户第一，诚信至上”
+				      的原则，与多家企业建立了长期的合作关系。
+				      公司拥有一支较强的技术研发队伍并和国内大
+				      专院校强强联手，研发出拥有自主知识产权。
+				      热诚欢迎各界朋友前来参观、考察、洽谈业务。
+				      黄杰标代表西安挑战者飞机制造有限公司欢迎新
+				      老客户来电咨询。西安挑战者飞机制造有限公司
+				      本着“客户第一，诚信至上”的原则，与多家企业
+				      建立了长期的合作关系。公司拥有一支较强的技
+				      术研发队伍并和国内大专院校强强联手，研发出
+				      拥有自主知识产权。热诚欢迎各界朋友前来参观、
+				      考察、洽谈业务。黄杰标代表西安挑战者飞机制造
+				      有限公司欢迎新老客户来电咨询。西安挑战者飞机制
+				      造有限公司本着“客户第一，诚信至上”的原则，与多
+				      家企业建立了长期的合作关系。公司拥有一支较强的
+				      技术研发队伍并和国内大专院校强强联手，研发出拥有
+				      自主知识产权。热诚欢迎各界朋友前来参观、考察、洽谈业
+				      务。黄杰标代表西安挑战者飞机制造有限公司欢迎新老客户来电咨询。
+			</p>
+			<img src="images/page-about-pic.jpg">
+		</div>
+		<!--contact end-->		
+		
+		<!--footer begin-->
+		<div class="footer">
+			<div>
+				<p>版权所有： 西安挑战者飞机制造有限公司　　　　技术支持 ：百变科技（网站建设 网络推广）</p>
+				<a id="bottom" href="javascript:scroll(0,0)">
+					<img src="images/go-top.jpg">
+				</a>
+			</div>	
+		</div>
+		<!--footer-->
+		
+		<script type="text/javascript" src="js/roundabout.js"></script> 
+		<script type="text/javascript" src="js/roundabout_shapes.js"></script> 
+		<script type="text/javascript" src="js/gallery_init.js"></script> 
+</html>

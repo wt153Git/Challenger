@@ -1,0 +1,24 @@
+/*
+ 
+ * 图片循环
+ * 
+ * 
+ * */
+
+#slide-box{width:1200px; position:relative; height:318px; margin: auto; margin-bottom: 80px;}
+#slide-box .corner{clear:both; display:block;overflow:hidden;height:0; }
+#slide-box .slide-content{background:#333333; }
+#slide-box .JQ-slide-content{position:absolute;}
+#slide-box .JQ-slide-nav a{display:block;z-index:99;width:37px;color:#b4b4b4;position:absolute; top:130px;height:65px; text-decoration:none;}
+#slide-box .JQ-slide-nav span{
+	display:block;width:37px; font-size: 60px;
+	cursor:pointer;height:63px; color:#fff; line-height: 63px; text-align:center;
+	}
+
+#slide-box .JQ-slide-nav .prev{left:20px;}
+#slide-box .JQ-slide-nav .next{right:20px;}
+#slide-box .wrap{overflow:hidden;width:1200px;height:318px;position:relative;}
+#slide-box ul{width:10000px;}
+#slide-box li{float:left;width:600px;height:318px;}
+#slide-box li img{width:600px;height:318px; margin: auto;}
+#slide-box .JQ-slide-nav a:hover,#slide-box .JQ-slide-nav a:hover span{color:#f43d1e;}

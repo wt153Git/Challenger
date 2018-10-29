@@ -1,0 +1,448 @@
+*{padding: 0; margin: 0; font-family: "微软雅黑"; line-height: 100%; text-align: center; list-style:none ;}
+ul,ol,dl,li{ display: block;}
+img{ display: block;  max-width: 100%;}
+a{text-decoration: none; display: block; }
+body{overflow-x: hidden;}
+html {font-size: 62.5%;}
+body {font-size: 1.4rem;  background: #fff;}
+
+/*banner*/
+.flexslider {
+	margin: 0px auto ;
+	position: relative;
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.flexslider .slides li {
+	width: 100%;
+	height: 100%;
+}
+
+.flex-direction-nav a {
+	width: 70px;
+	height: 70px;
+	line-height: 99em;
+	overflow: hidden;
+	margin: -35px 0 0;
+	display: block;
+	background: url(images/ad_ctr.png) no-repeat;
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: all .3s ease;
+	border-radius: 35px;
+}
+
+.flex-direction-nav .flex-next {
+	background: url(../images/ad_ctr.png) 0 -70px;
+	right: 0;
+	opacity: 0.2;
+}
+
+.flex-direction-nav .flex-prev {
+	left: 0;
+	background: url(../images/ad_ctr.png);
+	opacity: 0.2;
+}
+
+.flexslider:hover .flex-next {
+	opacity: 0.8;
+	filter: alpha(opacity=25);
+}
+
+.flexslider:hover .flex-prev {
+	opacity: 0.8;
+	filter: alpha(opacity=25);
+}
+
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+	opacity: 1;
+	filter: alpha(opacity=50);
+}
+
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+}
+
+.flex-control-nav li {
+	margin: 0 2px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+.flex-control-paging li a {
+	background:#fff;
+	border-radius: 100%;
+	display: block;
+	height: 16px;
+	overflow: hidden;
+	text-indent: -99em;
+	width: 16px;
+	cursor: pointer;
+}
+
+.flex-control-paging li a.flex-active,
+.flex-control-paging li.active a {
+	background-position: 0 0;
+}
+
+.flexslider .slides a img {
+	width: 100%;
+	height: 700px;
+	display: block;
+}
+
+
+/*nav*/
+.header{
+	width: 100%; height: 95px; overflow: hidden; background: #fff;
+	opacity: 0.8; position: absolute; top: 0; opacity: 0.6;
+}
+.nav{
+	width:1200px; height: 95px; overflow: hidden; 
+	 margin: auto; 
+}
+.nav .logo{
+	float: left; margin:22px 0 0 10px;
+}
+.nav .nav-list{
+	float: left; height: 95px; width: 850px; margin-left: 45px;
+}
+.nav-list li {
+	float: left; padding-top: 40px; margin: 0 45px;
+}
+.nav-list li a{
+	font-size: 1.8rem; color: #0010B5;
+	 padding-bottom: 10px;
+}
+.nav-list li:hover{
+	border-bottom: 2px solid #0010b5;
+}
+
+/*product*/
+.product{
+	width: 100%; height: auto; overflow: hidden;
+	padding-top: 80px; 
+}
+.text-bt{
+	font-size: 3.6rem; color: #222222;
+}
+.bt-line{
+	margin:25px auto; 
+}
+.english-bt{
+	font-size: 2.4rem; color: #999; margin-bottom: 45px;
+}
+.product-list{
+	width: 1200px; height: auto; overflow: hidden;
+	margin: auto;  margin-bottom: 40px;
+}
+.product-list li{
+	width: 32%; margin-left: 1%; float: left;
+	 margin-bottom: 40px;
+}
+.product-list-name{
+	font-size: 2.0rem; margin: 45px 0  15px 0;
+}
+.product-list-text{
+	font-size: 1.4rem; line-height: 200%; 
+	margin: 0 15px;
+}
+
+.litter-bt{
+	background:url(../images/bt-bg.png) no-repeat center;
+	background-size: 100% auto;
+	width: 320px; height:80px; margin: 35px auto 50px;
+	font-size:2.0rem; line-height: 80px;
+}
+
+.middle-text{
+	width: 100%; height: auto; overflow: hidden;
+	padding: 30px 0; background: #f1f1f1;
+}
+.middle-text p{
+	width: 30%; font-size: 1.6rem; line-height: 250%;
+	color: #666666;  margin: auto;
+}
+
+/*video*/
+.video{
+ 	width: 100%; height: auto; overflow: hidden;
+ 	 padding-top: 80px;
+}
+
+/*about*/
+.little-bt-text{
+	font-size: 2.0rem; color: #666;  width: 50%;
+	 margin:-20px auto 45px;
+}
+.about-list{
+	width: 990px; height: auto; overflow: hidden;
+	margin: auto; border-top: 1px #eeeeee solid;
+	padding: 0 105px; margin-bottom: 80px;
+}
+.about-list li{
+	width: 300px; height: 333px; background: #eeeeee;
+	float: left; margin-left: 25px;
+}
+.about-list li img{
+	margin: 75px auto 40px;
+}
+.about-list li h2{
+	color: #333333;
+}
+.about-pro{
+	width: 945px; height: auto; overflow: hidden;
+	margin: auto; margin-bottom: 80px;
+ }
+.about-pro .about-pro-text{
+	width: 50%; float: left; font-size: 1.6rem;
+}
+.about-pro li p{
+	line-height: 200%; text-align:left;
+	text-indent: 32px;
+}
+.about-pro .litter-bt{
+	width: 270px; height: 65px; line-height: 65px;
+	margin:0 auto 15px;  text-align: center; text-indent: 0;
+}
+.about-pro-pic{
+	 width: 40%;  float:left; 
+	  padding-left: 10%;
+}
+.about-pro-jd{
+	width: 1200px; height: auto; overflow: hidden;
+	 margin: auto; margin-bottom: 80px;
+}
+.about-pro-jd li{
+	float: left; width: 50%;
+}
+
+
+/*contact*/
+.contact-us{
+	width: 1200px; height: auto; overflow: hidden;
+	 margin: auto; margin-bottom: 80px;
+}
+.contact-us .map{
+	margin-bottom: 80px;
+}
+.contact-us .litter-bt{
+	width: 270px; height: 65px; line-height: 65px;
+	margin:0 auto 60px;
+}
+.contact-us form{
+	width: 95%; height: auto; overflow: hidden;
+	margin: auto;  margin-bottom: 96px;
+}
+.contact-us form input{
+	width: 48.5%; height: 48px; 
+	 margin-bottom: 30px; text-align: left;
+	text-indent: 20px;
+	 border: 1px #eee solid;
+}
+.names{
+	 float: left;
+}
+.telphone{
+	 float:right;
+}
+.contact-us form textarea{
+	width: 100%; height: 118px; text-align: left;
+	text-indent: 20px; line-height: 40px;
+	border: 1px #eee solid;
+	margin-bottom: 30px;
+}
+.contact-us form button{
+	width: 100%; height: 50px; background: #0010B5;
+	border: none; font-size: 1.6rem; color: #fff;
+	line-height: 50px;
+}
+.contact-us-mess{
+	width: 75%; height:auto ; overflow: hidden;
+	 margin: auto; margin-bottom: 115px;
+}
+.contact-us-mess li{
+	width: 29%; margin: 0 2%; 
+	float: left; font-size: 1.4rem; color: #666666;
+	border-top: 4px #ccc solid;
+}
+.contact-us-1{
+	margin:60px auto 38px ; 
+}
+.contact-us-add{ 
+	margin:60px auto 30px ;
+}
+
+.share-you{
+	width: 25%; height: auto; overflow: hidden;
+	margin: auto; margin-bottom: 50px;
+}
+.share-you li{
+	float: left; margin: 0 10px;
+}
+.ewm{ margin: auto; }
+
+
+/*footer*/
+.footer{
+	width: 100%; height: 46px;
+	background: #090b1c;
+}
+.footer div{
+	width: 1200px; height: 46px;
+	margin: auto;
+}
+.footer div p{
+	width: 95%; color: #fff;
+	float: left; line-height: 46px;
+}
+.footer div a{
+	width: 5%; float: right;
+}
+
+
+/*内页*/
+/*当前位置*/
+.location{
+	width: 1200px; height: 103px; margin: auto;
+	 border-bottom: 1px #ccc solid;
+	 margin-bottom: 50px;
+}
+.location-left{
+	width: 220px; height: 104px ; line-height: 104px;
+	 float:left; font-size: 3.0rem; color: #a281c1;
+}
+.location-left span{
+	margin: 0 5px; color: #222222; font-size: 2.2rem;
+}
+.location-right{
+	float: right; height: 16px ;
+	margin-right: 15px; margin-top: 44px;
+}
+.location-right>li a{
+	text-decoration:none;
+	color: #222;
+}
+.location-right li{
+	float: left; color: #222222; font-size: 1.6rem;
+}
+
+/*产品*/
+.products-page{
+	width: 1200px; height: auto; overflow: hidden;
+	margin: auto;
+}
+.product-title{
+	width: 100%; margin-bottom:70px;
+}
+.product-title li{
+	float: left; width: 106px; font-size: 2.0rem;
+	color: #333; border-right: 1px #0010B5 solid;
+}
+.product-title li a{
+	font-size: 2.0rem;
+	color: #333;
+}
+.product-title li a:hover{
+	color: #0010B5;
+}
+
+/*翻页*/
+
+.pages{
+		width:1200px; height:58px ; margin: auto; 
+		margin-bottom: 50px;
+		}
+	.pages div{width: 340px;  margin: auto;}
+	.pages div a{
+		float: left; margin:0 10px; line-height: 58px; 
+		color: #151A26; font-size: 1.6rem;
+	}
+	.pages div a:hover{
+		color: #D8A066;
+	}
+
+
+/*产品详情*/
+.product-details{
+	width: 1100px; height: auto; overflow: hidden;
+	margin: auto; padding-top: 55px;
+}
+.p-details-bt{
+	font-size: 3.0rem; color: #000;
+}
+.p-details-bt-line{
+	margin: auto; margin-bottom: 30px;
+}
+.p-details-bt-text{
+	margin: 0 140px 30px; line-height: 150%;
+	font-size: 1.4rem; text-align: left;
+	text-indent: 28px;
+}
+.product-details-1{
+	margin-bottom: 150px;
+}
+.product-details-2{
+	width: 1100px; height: auto;
+	overflow:hidden; margin:0 auto 170px;
+}
+.product-details-2 .p-details-bt-line{
+	margin: 18px 0;
+}
+.product-details-2 .p-details-bt-text{
+	margin: 0; 
+}
+.product-details-2 .product-details-font{
+	width:360px; float: left;
+	padding: 30px 120px 0 230px;
+}
+.product-details-2 .product-details-img{
+	float:left;
+}
+.product-details-3 {
+	width: 1100px; height: auto;
+	overflow:hidden; margin:0 auto 170px;
+}
+.product-details-3 .p-details-bt-line{
+	margin: 18px 0;
+}
+.product-details-3 .p-details-bt-text{
+	margin: 0; 
+}
+.product-details-3 .product-details-font{
+	width:360px; float: left;
+	padding: 30px 230px 0 120px;
+}
+.product-details-3 .product-details-img{
+	float:left;
+}
+
+
+/*关于我们*/	
+.page-about{
+	width: 924px; height: auto; overflow: hidden;
+	margin: auto;
+}
+.page-about .litter-bt{
+	width: 268px; height: 64px; line-height: 64px; 
+	margin-bottom: 50px;
+}
+.page-about img{
+	margin-bottom: 80px; width: 100%; height: auto;
+}
+.page-about .page-about-text{
+	font-size: 1.6rem; line-height: 200%; margin-bottom: 50px;
+	text-align: left; text-indent: 32px;
+}
